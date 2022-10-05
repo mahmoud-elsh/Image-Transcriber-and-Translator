@@ -111,7 +111,7 @@ def open():
         translate_button.configure(state=ACTIVE)
         languages.config(state=ACTIVE)
 
-        result = pytesseract.image_to_string(Image.open(root.filename), lang="Arabic")
+        result = pytesseract.image_to_string(Image.open(root.filename))
 
 
 def transcribe():
